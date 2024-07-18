@@ -1,0 +1,25 @@
+<%- include('begin.ejs') %>
+<h2>Elérhető autóink</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Kép</th>
+            <th>Gyártó</th>
+            <th>Típus</th>
+            <th>Üzemanyag</th>
+            <th>Ár</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% for(var car of cars) { %>
+        <tr>
+            <td><img src="/media/<%= car.picture %>" alt="Autó képek" style="width: 30vh"></td>
+            <td><%= car.make %></td>
+            <td><%= car.model %></td>
+            <td><%= car.fuel_type %></td>
+            <td><%= car.price.toLocaleString()%> Ft</td>
+        </tr>
+        <% } %>
+    </tbody>
+</table>
+<%- include('end.ejs') %>

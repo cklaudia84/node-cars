@@ -1,0 +1,111 @@
+* 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgrey;
+    color: rgb(18, 31, 31);
+    margin-top: 0;
+}
+li
+{
+    border-left: 5px solid rgb(77, 76, 76);
+    list-style: none;
+    padding: 2vw;
+    background-color: rgb(122, 136, 136);
+}
+a
+{
+    text-decoration: none;
+    color: rgb(5, 17, 17);
+    text-shadow: 1px 1px 1px rgb(223, 217, 217);
+    font-weight: bold;
+    padding: 2vw;
+    background-color: rgb(122, 136, 136);
+    transition: 0.3s;
+    font-size: larger;
+}
+a:hover
+{
+    color: rgb(16, 41, 41);
+    text-shadow: 1px 1px 1px rgb(9, 70, 70);
+}
+
+ul
+{
+    padding: 2vw;  
+}
+header
+{
+    display: flex;
+}
+nav
+{
+    padding-top: 1vw;
+    display: flex;
+   
+}
+header h1
+{ 
+    font-size: 200%;
+    padding: 1vw;
+    text-align: center;
+    margin: auto;
+    
+    align-items: center;
+}
+header img
+{
+    max-width: 18%;
+    margin: 2vw;
+}
+hr
+{
+    border-color: rgb(69, 116, 116);
+}
+h2
+{
+    text-align: center;
+}
+#contact
+{
+    text-align: center;
+    align-items: center;
+}
+.container
+{
+    padding: 3vw 10vw;
+}
+footer h3
+{
+    text-align: center;
+    padding: 2vw;
+}
+table
+{
+    width: 80vw;
+}
+table th
+{
+    height: 10vh;
+}
+table td, tr
+{
+    width: 30vw;
+    text-align: center;
+    font-size: larger;
+}
+@media screen and (max-width: 900px)
+{
+    header h1
+    {
+        font-size: 150%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 550px)
+{
+    header h1
+    {
+        font-size: 120%;
+        margin: auto;
+    }
+}
